@@ -14,12 +14,12 @@ Simple Mapper between View Models and Data Entities.
 <div>or use more generic inteface IEntityModelBase<TData> if your View Models already inherits from other classes</div>
 <br />
 <div>There are also overrides EntityModelStandard<TData> and IEntityModelStandard<TData> which has default properties:</div>
-        <div>int? ID { get; set; }</div>
-        <div>DateTime? CreatedDate { get; set; }</div>
-        <div>string CreatedBy { get; set; }</div>
-        <div>DateTime? LastModifiedDate { get; set; }</div>
-        <div>string LastModifiedBy { get; set; }</div>
-        <br />
+        int? ID { get; set; }
+        DateTime? CreatedDate { get; set; }
+        string CreatedBy { get; set; }
+        DateTime? LastModifiedDate { get; set; }
+        string LastModifiedBy { get; set; }
+        
 <div>Then to map each property just add [AutoMap] attribute on each property.</div>
 <div>This attribute has few overrides which allows you specify name on Entity (if different to View Model) </div>
 <div>And/or whether is read only to ensure that no one can update this property.</div>
